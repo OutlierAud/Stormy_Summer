@@ -52,7 +52,17 @@ The Western North Pacific is the primary basin in which tropical cyclones that a
 
 ---
 
-## 👩🏻‍💻 Data
+## 👩🏻‍💻 Data & Reproducibility
+
+> **The raw datasets are not stored in this repository because they exceed GitHub’s file-size limits.**  
+> To reproduce the analysis:
+> 1. Create an account with the Copernicus Climate Data Store (CDS)
+> 2. Configure your CDS API credentials.
+> 3. Clone this repository.
+> 4. Run `scripts/01_clean_data.R` (Download raw data from source)
+> 5. Run `scripts/02_analysis.R` (Creates data/processed/typhoon_clean.csv)
+> 6. Run `scripts/03_extract_sst.R` (Creates data/features/typhoon_sst.csv)
+
 
 - **1995–2023 engineered modelling dataset** containing seasonal typhoon observations and corresponding mean summer sea surface temperature (SST), derived from IBTrACS typhoon records and ERA5 SST data. These observations will later be aggregated into annual summaries for statistical modelling. See the **Data Dictionary** and **Data README** in the [`data/`](data/) directory for variable definitions, preprocessing steps, and feature engineering details.
 
@@ -79,7 +89,7 @@ The Western North Pacific is the primary basin in which tropical cyclones that a
 
 #### Key Python packages
 
-- cdsapi — download ERA5 SST data from the Copernicus Climate Data Store.
+- cdsapi : download ERA5 SST data from the Copernicus Climate Data Store.
 
 ---
 

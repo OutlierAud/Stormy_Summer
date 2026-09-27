@@ -24,7 +24,7 @@ Due to the large file size of the raw typhoon dataset (>100 MB) the following pr
 ## **Temperature Data Acquisition & Pre-processing**
 - **1995–2023 historical sea surface temperature (SST) data** obtained from the [ERA5 Reanalysis](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels) via the Copernicus Climate Data Store (CDS) API.
 
-## Final Dataset
+## Final Dataset ()
 The cleaned typhoon track data and corresponding SST values were merged at the **typhoon observation level**. Each row represents an individual typhoon track observation with its geographic coordinates and associated SST value.
 
 This observation-level dataset is used for the exploratory spatial analysis (Kaggle notebook 01). **For the subsequent statistical modelling, the data will be aggregated by year to derive the seasonal typhoon count and corresponding mean summer SST.**
